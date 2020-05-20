@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+#bor{
+	border-radius:5px;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+#khung_dangnhap{
+	padding-bottom:70px;
+	padding-top:40px;	
+}
+.nen:hover{
+	background:#CFF;
+	color:#006;
+}

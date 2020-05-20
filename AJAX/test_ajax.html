@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+	#test{
+		height:200px;
+		width:300px;
+		background-color:#CCF;
+	}
+</style>
+</head>
+
+<body>
+
+   
+<script src="../js/jquery-1.12.4.min.js"></script>
+
+<script>
+	function AJAX()
+	{				
+		$.ajax({
+			url:'ajax.php',
+			type:'POST',
+			data:{email:document.getElementById('email').value},	
+		})
+		.done(function(data){
+				$("#test").html(data);
+			}
+		)
+	}
+</script>
+
+<marquee style="font-size:24px">Hello World!</marquee>
+
+<div id="test"></div>
+<input type="email" id="email" name="email" onBlur="AJAX()"><br>
+<input type="email" id="email" name="email">
+<!--<button onClick="AJAX()">Click</button>-->
+
+</body>
+</html>
